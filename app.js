@@ -1,6 +1,7 @@
+document.getElementById('button-div').onclick = flip;
+
 function flip(){
-    document.getElementById("top").onclick;
-    if (Math.ceil(Math.random() * 2) % 2 == 0){
+    if (Math.ceil(Math.random() * 2) % 2 == 0) {
         show("heads");
     }
     else{
@@ -8,10 +9,7 @@ function flip(){
     }
 }
 
-function show(){
-    document.getElementById("result").innerHtml;
+function show(coin) {
+    document.getElementById("result").innerHTML = coin; // this took me an embarrassingly long time to do, but thanks anyway https://stackoverflow.com/questions/32302066/coin-toss-with-javascript-and-html
 }
 
-flip();
-
-console.log(show)
