@@ -1,0 +1,104 @@
+html{
+    font-size: 62.5%;
+    color: #00E34E;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: #004772;
+}
+
+.banner{
+    font-size: 5rem;
+    text-align: center;
+    color: linear-gradient(white, black);
+}
+
+.user-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    font-size: 2.2rem;
+}
+
+.text-box{
+    height: 2.5rem;
+    width: 20rem;
+}
+
+.btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4.0rem;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 2rem;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+.btn:hover{
+    transform: translateY(-.3rem);
+    box-shadow: 0 1.0rem 2rem rgba(0,0,0.2);
+    
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0.2);
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    height: 10vh;
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    font-size: 2.2rem;
+    width: 80vw;
+}
+
+.display-thingy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    font-size: 2.2rem;
+    width: 100%;
+}
+
+.display-image img{
+    height: 9vh;
+}
+
+.utility-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

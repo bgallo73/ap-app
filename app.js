@@ -1,6 +1,4 @@
-document.getElementById('button-div').onclick = flip;
-
-function flip(){
+document.getElementById("flip-coin").onclick = function(){
     if (Math.ceil(Math.random() * 2) % 2 == 0) {
         show("heads");
     }
