@@ -1,6 +1,6 @@
 html{
-    font-size: 62.5%;
     color: #00E34E;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 *, *::after, *::before{
