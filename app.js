@@ -8,6 +8,7 @@ document.getElementById("flip-coin").onclick = function coinFlip(){
         document.getElementById("coin-result").innerHTML = "tails";
         document.getElementById("coin-image").src = "img/tails.png";
     }
+    document.getElementById("coin-result-p").classList.remove("hidden")
 }
 
 document.getElementById("roll-dice").onclick = function diceRoll() {
@@ -17,5 +18,6 @@ document.getElementById("roll-dice").onclick = function diceRoll() {
     document.getElementById("die-2-result").innerHTML = die2;
     document.getElementById("die-1-img").src = "img/dice-" + die1 + ".png"
     document.getElementById("die-2-img").src = "img/dice-" + die2 + ".png"
+    document.getElementById("dice-result-p").classList.remove("hidden")
 }
 
