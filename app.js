@@ -15,5 +15,7 @@ document.getElementById("roll-dice").onclick = function diceRoll() {
     let die2 = (Math.floor(Math.random() * 6) + 1)
     document.getElementById("die-1-result").innerHTML = die1;
     document.getElementById("die-2-result").innerHTML = die2;
+    document.getElementById("die-1-img").src = "img/dice-" + die1 + ".png"
+    document.getElementById("die-2-img").src = "img/dice-" + die2 + ".png"
 }
 
