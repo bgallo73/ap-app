@@ -8,28 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class = "coin-flip">
-        <div class = "coin-message">
-            <p>Flip a coin!</p>
-        </div>
-        <button type = "button" class = "btn" id = "flip-coin">Flip</button>
-        <div class = "coin-results">
-            <p id = "coin-result-p" class = "hidden">The coin landed on <span id = "coin-result"> </span></p>
-            <img id = "coin-image"> </img>
-        </div>
+    <div class = "wrapper">
+        <h1 class = "banner">Probability</h1>
+    <div class = "content">
+        <div class = "coin-flip">
+            <div class = "coin-message">
+                <p>Flip a coin!</p>
+            </div>
+            <button type = "button" class = "btn" id = "flip-coin">Flip</button>
+            <div class = "coin-results">
+                <p id = "coin-result-p" class = "hidden">The coin landed on <span id = "coin-result"> </span></p>
+                <img id = "coin-image"> </img>
+            </div>
+            </div>
+        <div class = "dice roll">
+            <div class = "dice-message">
+                <p>Roll the dice!</p>
+            </div>
+            <button type = "button" class = "btn" id = "roll-dice">Roll</button>
+            <div class = "dice-results">
+                <p id = "dice-result-p" class = "hidden">You rolled a <span id = "die-1-result"> </span> and a <span id = "die-2-result"></span></p>
+                <img id = "die-1-img"> </img>
+                <img id = "die-2-img"> </img>
+            <div class = "total-score">
+                <p id = "score-message">Your total score is <span id = "dice-score"></span>.</p>
+            </div>
+            </div>
         </div>
     </div>
-    <div class = "dice roll">
-        <div class = "dice-message">
-            <p>Roll the dice!</p>
-        </div>
-        <button type = "button" class = "btn" id = "roll-dice">Roll</button>
-        <div class = "dice-results">
-            <p id = "dice-result-p" class = "hidden">You rolled a <span id = "die-1-result"> </span> and a <span id = "die-2-result"></span></p>
-            <img id = "die-1-img"> </img>
-            <img id = "die-2-img"> </img>
-        </div>
-    </div>
+</div>
 </body>
 
     <script src = "app.js"></script>

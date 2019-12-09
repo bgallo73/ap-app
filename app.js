@@ -19,5 +19,12 @@ document.getElementById("roll-dice").onclick = function diceRoll() {
     document.getElementById("die-1-img").src = "img/dice-" + die1 + ".png"
     document.getElementById("die-2-img").src = "img/dice-" + die2 + ".png"
     document.getElementById("dice-result-p").classList.remove("hidden")
-}
+    let score = 0;
+    switch (die1 = die2){
+        case 0:
+            true;
+            score += 1;
+    }
+    }
+
 

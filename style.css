@@ -1,5 +1,5 @@
 html{
-    color: #00E34E;
+    color: white;
     font-family: 'Karla', sans-serif;
 }
 
@@ -8,6 +8,34 @@ html{
     margin: 0;
     padding: 0;
 }
+
+.content {
+    display: flex;
+    justify-content: space-around;
+	flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.banner {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0.75rem;
+    color: #004772;
+    background-color: white;
+    height: 15vh;
+    font-size: 6vh;
+    text-transform: uppercase;
+    letter-spacing: .75rem;
+    -webkit-clip-path: polygon(
+      50% 0%,
+      100% 25%,
+      100% 75%,
+      50% 100%,
+      0% 75%,
+      0% 25%
+    );
+    clip-path: polygon(0 0, 100% 0%, 88% 100%, 0% 100%);
+  }
 
 body{
     background-color: #004772;
