@@ -17,8 +17,16 @@ html{
     margin: 10vh;
 }
 
-#coin-image {
+.coin-message{
     text-align: center;
+}
+
+#flip-coin{
+    text-content: center;
+}
+
+.dice-message{
+    text-align: center
 }
 
 .banner {

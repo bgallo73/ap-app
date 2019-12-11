@@ -1,10 +1,11 @@
 document.getElementById("flip-coin").onclick = function coinFlip(){
     let amount = prompt("How many times would you like to flip the coin?")
-
-    let i;
+    while (amount < 1|| amount > 10000){
+        amount = prompt("How many times would you like to flip the coin? Any value from 1 to 10000.")
+    }
     let heads = 0;
     let tails = 0;
-    for (i = 0; i < amount; i++){
+    for (let i = 0; i < amount; i++){
         if((Math.ceil(Math.random() * 2) % 2) == 0){
             heads++
         }
@@ -24,18 +25,6 @@ document.getElementById("flip-coin").onclick = function coinFlip(){
     else{
         document.getElementById("coin-image").src = "img/tails.png"
     }
-
-
-    /* let coinValue = (Math.ceil(Math.random() * 2) % 2)
-    if (coinValue == 0){
-        document.getElementById("coin-result").innerHTML = "heads";
-        document.getElementById("coin-image").src = "img/heads.png";
-    }
-    else{
-        document.getElementById("coin-result").innerHTML = "tails";
-        document.getElementById("coin-image").src = "img/tails.png";
-    }
-    document.getElementById("coin-result-p").classList.remove("hidden") */
 }
 
 document.getElementById("roll-dice").onclick = function diceRoll() {
@@ -55,8 +44,7 @@ document.getElementById("roll-dice").onclick = function diceRoll() {
     }
 
     let rollResults = [];
-    let i;
-    for (i = 0; i < amount; i++){
+    for (let i = 0; i < amount; i++){
         rollResults.push(Math.floor(Math.random() * 6) + 1)
     }
     diceSum = rollResults.reduce(function(rollResults, a) { return rollResults + a; }, 0);
@@ -74,5 +62,4 @@ document.getElementById("roll-dice").onclick = function diceRoll() {
     document.getElementById("dice-average-p").classList.remove('hidden')
     document.getElementById("dice-average").innerHTML = diceAverage;
     }
-
     }
