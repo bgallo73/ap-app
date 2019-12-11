@@ -21,12 +21,8 @@ document.getElementById("flip-coin").onclick = function coinFlip(){
     if(heads > tails){
         document.getElementById("coin-image").src = "img/heads.png"
     }
-    else if(heads = tails){
-        document.getElementById("coin-image").src = "img/heads.png"
-        document.getElementById("coin-image-tie").src = "img/tails.png"
-    }
     else{
-        document.getElementById("coin-image").sec = "img/tails.png"
+        document.getElementById("coin-image").src = "img/tails.png"
     }
 
 

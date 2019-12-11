@@ -14,6 +14,7 @@ html{
     justify-content: space-around;
 	flex-wrap: nowrap;
     flex-direction: row;
+    margin: 10vh;
 }
 
 #coin-image {
