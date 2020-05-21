@@ -22,7 +22,15 @@ html{
 }
 
 #flip-coin{
-    text-content: center;
+    text-align: center;
+}
+
+.dice-roll{
+    text-align: center;
+}
+
+.coin-flip{
+    text-align: center;
 }
 
 .dice-message{

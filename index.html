@@ -13,7 +13,8 @@
     <div class = "content">
         <div class = "coin-flip">
             <div class = "coin-message">
-                <p>Flip a coin!</p>
+                <p>How many times do you want to flip the coin?</p>
+                <input type="number" id="coin-amount" min="1" max="1000"></input>
             </div>
             <button type = "button" class = "btn" id = "flip-coin">Flip</button>
             <div class = "coin-results">
@@ -22,9 +23,10 @@
                 <img id = "coin-image"> </img>
             </div>
             </div>
-        <div class = "dice roll">
+        <div class = "dice-roll">
             <div class = "dice-message">
-                <p>Roll the dice!</p>
+                <p>How many times do you want to roll the dice?</p>
+                <input type="number" id="dice-amount" min="1" max="5"></input>
             </div>
             <button type = "button" class = "btn" id = "roll-dice">Roll</button>
             <div class = "dice-results">
