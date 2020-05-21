@@ -2,8 +2,9 @@ let byId = document.getElementById.bind(document)
 
 byId("flip-coin").onclick = function coinClick(){
     let amount = parseInt(byId("coin-amount").value)
-    if (amount < 1|| amount > 10000){
+    if (amount < 1|| amount > 1000){
         alert("Choose a number from 1 to 1000.")
+            byId("coin-amount").reset()
     }
     let heads = 0;
     let tails = 0;
@@ -19,6 +20,7 @@ byId("flip-coin").onclick = function coinClick(){
     byId("heads-amount").innerHTML = heads;
     byId("tails-amount-p").classList.remove("hidden");
     byId("tails-amount").innerHTML = tails;
+
     if(heads > tails){
         byId("coin-image").src = "img/heads.png"
     }
@@ -31,17 +33,27 @@ byId("roll-dice").onclick = function diceRoll() {
     let amount = parseInt(byId("dice-amount").value)
     if (amount < 1|| amount > 5){
         alert("Choose a number from 1 to 5.")
+            byId("dice-amount").reset()
     }
 
     let rollResults = [];
     for (let i = 0; i < amount; i++){
         rollResults.push(Math.floor(Math.random() * 6) + 1)
     }
-    diceSum = rollResults.reduce(function(rollResults, a) { return rollResults + a; }, 0);
-    diceAverage = (diceSum / amount);
+
+    let diceSum = rollResults.reduce(function(rollResults, a) {
+         return rollResults + a; 
+    });
+
+    let resultsString = rollResults.map(String)
+    let resultsLast = resultsString.pop()
+    let resultsSentence = resultsString.join(', ') + ' and ' + resultsLast
+
+    let diceAverage = (diceSum / amount);
+    let diceAverageFixed = diceAverage.toFixed(2)
 
     byId("dice-result-p").classList.remove("hidden");
-    byId("dice-result").innerHTML = rollResults;
+    byId("dice-result").innerHTML = resultsSentence;
     byId("die-1-img").src = "img/dice-" + rollResults[0] + ".png"
     byId("die-2-img").src = "img/dice-" + rollResults[1] + ".png"
     byId("die-3-img").src = "img/dice-" + rollResults[2] + ".png"
@@ -51,6 +63,6 @@ byId("roll-dice").onclick = function diceRoll() {
         byId("dice-sum-p").classList.remove("hidden")
         byId("dice-sum").innerHTML = diceSum;
         byId("dice-average-p").classList.remove('hidden')
-        byId("dice-average").innerHTML = diceAverage;
+        byId("dice-average").innerHTML = diceAverageFixed;
     }
-    }
+}
